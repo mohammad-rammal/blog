@@ -12,10 +12,7 @@ function Auth({ modal, setModal }) {
     const [createUser, setCreateUser] = useState(false);
     const [signReq, setSignReq] = useState("");
 
-
-
     const hidden = modal ? "visible opacity-100" : "invisible opacity-0";
-
 
     return (
         <Modal modal={modal} setModal={setModal} hidden={hidden}>
