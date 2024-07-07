@@ -4,9 +4,9 @@ import { navbar } from "../../data/Data";
 import { useEffect, useState } from "react";
 import Auth from "../Auth/Auth";
 
-
 function GhestHeader() {
     const [isActive, setIsActive] = useState(false);
+    const [modal, setModal] = useState(false);
 
     useEffect(() => {
         const scrollUpDown = () => {
@@ -40,8 +40,12 @@ function GhestHeader() {
                         ))}
                     </div>
                     <div className="relative">
-                        <button className="navbar">Login</button>
-                        <Auth />
+                        <button
+                            onClick={() => setModal(true)}
+                            className="navbar">
+                            Login
+                        </button>
+                        <Auth modal={modal} setModal={setModal} />
                     </div>
                     <button
                         className={`  text-white rounded-full px-3 p-2 text-sm font-medium 
