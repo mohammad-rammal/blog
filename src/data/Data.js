@@ -13,7 +13,7 @@ export const navbar = [
     },
 ];
 
-export const discover = [
+export const sections = [
     "Technology",
     "Study",
     "Programming",
@@ -25,7 +25,7 @@ export const discover = [
     "Politics",
 ];
 
-export const discoverActions = [
+export const sectionActions = [
     "Help",
     "Status",
     "Writers",

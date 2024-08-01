@@ -3,9 +3,10 @@ import Home from "./components/Home/Home";
 import Ghest from "./components/Ghest/Ghest";
 import HomeHeader from "./components/Home/HomeHeader";
 import GhestHeader from "./components/Ghest/GhestHeader";
+import { Blog } from "./Context/Context";
 
 function App() {
-  const currentUser = false;
+  const { currentUser } = Blog();
 
   return (
     <>
